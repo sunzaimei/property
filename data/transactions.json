@@ -1,0 +1,44 @@
+[
+  { "id": "txn_01_01", "property_id": "prop_01", "transaction_date": "2024-08-15", "sale_price": 4200000, "land_area_sqft": 1800, "built_up_sqft": 2400, "psf_land": 2333, "psf_built_up": 1750, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_01_02", "property_id": "prop_01", "transaction_date": "2022-03-20", "sale_price": 3750000, "land_area_sqft": 1800, "built_up_sqft": 2400, "psf_land": 2083, "psf_built_up": 1563, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_01_03", "property_id": "prop_01", "transaction_date": "2019-11-08", "sale_price": 3100000, "land_area_sqft": 1800, "built_up_sqft": 2400, "psf_land": 1722, "psf_built_up": 1292, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_02_01", "property_id": "prop_02", "transaction_date": "2024-06-10", "sale_price": 3500000, "land_area_sqft": 1650, "built_up_sqft": 2200, "psf_land": 2121, "psf_built_up": 1591, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_02_02", "property_id": "prop_02", "transaction_date": "2022-09-14", "sale_price": 3100000, "land_area_sqft": 1650, "built_up_sqft": 2200, "psf_land": 1879, "psf_built_up": 1409, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_02_03", "property_id": "prop_02", "transaction_date": "2020-07-22", "sale_price": 2600000, "land_area_sqft": 1650, "built_up_sqft": 2200, "psf_land": 1576, "psf_built_up": 1182, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_02_04", "property_id": "prop_02", "transaction_date": "2018-04-05", "sale_price": 2350000, "land_area_sqft": 1650, "built_up_sqft": 2200, "psf_land": 1424, "psf_built_up": 1068, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_03_01", "property_id": "prop_03", "transaction_date": "2024-10-03", "sale_price": 7800000, "land_area_sqft": 3200, "built_up_sqft": 4500, "psf_land": 2438, "psf_built_up": 1733, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_03_02", "property_id": "prop_03", "transaction_date": "2022-05-18", "sale_price": 6900000, "land_area_sqft": 3200, "built_up_sqft": 4500, "psf_land": 2156, "psf_built_up": 1533, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_03_03", "property_id": "prop_03", "transaction_date": "2019-08-29", "sale_price": 5600000, "land_area_sqft": 3200, "built_up_sqft": 4500, "psf_land": 1750, "psf_built_up": 1244, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_04_01", "property_id": "prop_04", "transaction_date": "2024-07-22", "sale_price": 6900000, "land_area_sqft": 3500, "built_up_sqft": 4800, "psf_land": 1971, "psf_built_up": 1438, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_04_02", "property_id": "prop_04", "transaction_date": "2022-11-30", "sale_price": 6100000, "land_area_sqft": 3500, "built_up_sqft": 4800, "psf_land": 1743, "psf_built_up": 1271, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_04_03", "property_id": "prop_04", "transaction_date": "2020-02-14", "sale_price": 5200000, "land_area_sqft": 3500, "built_up_sqft": 4800, "psf_land": 1486, "psf_built_up": 1083, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_05_01", "property_id": "prop_05", "transaction_date": "2024-04-11", "sale_price": 11500000, "land_area_sqft": 7200, "built_up_sqft": 6500, "psf_land": 1597, "psf_built_up": 1769, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_05_02", "property_id": "prop_05", "transaction_date": "2021-09-05", "sale_price": 9800000, "land_area_sqft": 7200, "built_up_sqft": 6500, "psf_land": 1361, "psf_built_up": 1508, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_05_03", "property_id": "prop_05", "transaction_date": "2018-06-19", "sale_price": 7900000, "land_area_sqft": 7200, "built_up_sqft": 6500, "psf_land": 1097, "psf_built_up": 1215, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_06_01", "property_id": "prop_06", "transaction_date": "2024-09-20", "sale_price": 14200000, "land_area_sqft": 8500, "built_up_sqft": 7200, "psf_land": 1671, "psf_built_up": 1972, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_06_02", "property_id": "prop_06", "transaction_date": "2022-01-17", "sale_price": 12100000, "land_area_sqft": 8500, "built_up_sqft": 7200, "psf_land": 1424, "psf_built_up": 1681, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_06_03", "property_id": "prop_06", "transaction_date": "2019-04-28", "sale_price": 9500000, "land_area_sqft": 8500, "built_up_sqft": 7200, "psf_land": 1118, "psf_built_up": 1319, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_07_01", "property_id": "prop_07", "transaction_date": "2024-11-12", "sale_price": 42000000, "land_area_sqft": 18500, "built_up_sqft": 14000, "psf_land": 2270, "psf_built_up": 3000, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_07_02", "property_id": "prop_07", "transaction_date": "2021-06-25", "sale_price": 36500000, "land_area_sqft": 18500, "built_up_sqft": 14000, "psf_land": 1973, "psf_built_up": 2607, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_07_03", "property_id": "prop_07", "transaction_date": "2018-03-08", "sale_price": 28000000, "land_area_sqft": 18500, "built_up_sqft": 14000, "psf_land": 1514, "psf_built_up": 2000, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_08_01", "property_id": "prop_08", "transaction_date": "2024-12-05", "sale_price": 48500000, "land_area_sqft": 21000, "built_up_sqft": 16500, "psf_land": 2310, "psf_built_up": 2939, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_08_02", "property_id": "prop_08", "transaction_date": "2022-07-14", "sale_price": 39000000, "land_area_sqft": 21000, "built_up_sqft": 16500, "psf_land": 1857, "psf_built_up": 2364, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_08_03", "property_id": "prop_08", "transaction_date": "2019-10-09", "sale_price": 30500000, "land_area_sqft": 21000, "built_up_sqft": 16500, "psf_land": 1452, "psf_built_up": 1848, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_08_04", "property_id": "prop_08", "transaction_date": "2016-05-22", "sale_price": 24000000, "land_area_sqft": 21000, "built_up_sqft": 16500, "psf_land": 1143, "psf_built_up": 1455, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+
+  { "id": "txn_09_01", "property_id": "prop_09", "transaction_date": "2024-05-30", "sale_price": 2800000, "land_area_sqft": 1400, "built_up_sqft": 2800, "psf_land": 2000, "psf_built_up": 1000, "buyer_type": "foreigner", "project_name": "Ballota Park Cluster", "tenure": "999_leasehold" },
+  { "id": "txn_09_02", "property_id": "prop_09", "transaction_date": "2022-08-11", "sale_price": 2450000, "land_area_sqft": 1400, "built_up_sqft": 2800, "psf_land": 1750, "psf_built_up": 875, "buyer_type": "SC", "project_name": "Ballota Park Cluster", "tenure": "999_leasehold" },
+  { "id": "txn_09_03", "property_id": "prop_09", "transaction_date": "2020-03-16", "sale_price": 2050000, "land_area_sqft": 1400, "built_up_sqft": 2800, "psf_land": 1464, "psf_built_up": 732, "buyer_type": "PR", "project_name": "Ballota Park Cluster", "tenure": "999_leasehold" },
+
+  { "id": "txn_10_01", "property_id": "prop_10", "transaction_date": "2024-03-18", "sale_price": 9500000, "land_area_sqft": 2100, "built_up_sqft": 3600, "psf_land": 4524, "psf_built_up": 2639, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_10_02", "property_id": "prop_10", "transaction_date": "2021-11-22", "sale_price": 7800000, "land_area_sqft": 2100, "built_up_sqft": 3600, "psf_land": 3714, "psf_built_up": 2167, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_10_03", "property_id": "prop_10", "transaction_date": "2019-06-04", "sale_price": 6200000, "land_area_sqft": 2100, "built_up_sqft": 3600, "psf_land": 2952, "psf_built_up": 1722, "buyer_type": "SC", "project_name": null, "tenure": "freehold" },
+  { "id": "txn_10_04", "property_id": "prop_10", "transaction_date": "2016-09-15", "sale_price": 4800000, "land_area_sqft": 2100, "built_up_sqft": 3600, "psf_land": 2286, "psf_built_up": 1333, "buyer_type": "SC", "project_name": null, "tenure": "freehold" }
+]

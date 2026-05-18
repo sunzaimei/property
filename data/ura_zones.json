@@ -1,0 +1,12 @@
+[
+  { "property_id": "prop_01", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Low Density)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_02", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Low Density)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_03", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Low Density)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_04", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Low Density)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_05", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Low Density)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_06", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Low Density)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_07", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Good Class Bungalow Area)", "is_gcba": true, "gcba_name": "Nassim Road GCB Area", "master_plan_year": 2019 },
+  { "property_id": "prop_08", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Good Class Bungalow Area)", "is_gcba": true, "gcba_name": "Bin Tong Park GCB Area", "master_plan_year": 2019 },
+  { "property_id": "prop_09", "zone_code": "RESIDENTIAL", "zone_label": "Residential (Medium Density — Strata Landed)", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 },
+  { "property_id": "prop_10", "zone_code": "CONSERVATION", "zone_label": "Conservation Area — Emerald Hill", "is_gcba": false, "gcba_name": null, "master_plan_year": 2019 }
+]

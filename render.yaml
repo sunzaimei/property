@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: landediq-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATA_DIR
+        value: /opt/render/project/src/data
+      - key: CORS_ORIGINS
+        value: https://landediq.vercel.app
+      - key: ONEMAP_EMAIL
+        sync: false
+      - key: ONEMAP_PASSWORD
+        sync: false
+      - key: URA_ACCESS_KEY
+        sync: false
+    healthCheckPath: /health
