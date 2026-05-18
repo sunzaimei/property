@@ -1,6 +1,7 @@
 # LandedIQ — Singapore Landed Property Due Diligence
 
-**Live:** https://property-livid-one.vercel.app
+**Live:** https://property-livid-one.vercel.app  
+**API docs:** https://landediq-api.onrender.com/docs
 
 Enter any Singapore landed property address and get an instant Intelligence Card — replacing days of fragmented research with a 2-minute lookup.
 
