@@ -589,7 +589,11 @@ cp backend/.env.example backend/.env
 
 ---
 
-## 13. Roadmap
+## 14. Reference Materials
+
+| Document | URL | Used for |
+|----------|-----|---------|
+| URA List of Postal Districts | https://www.ura.gov.sg/Corporate/-/media/Corporate/Property/PMI-Online/List_Of_Postal_Districts.pdf | Postal sector prefix → district mapping in `_postal_to_district()` |
 
 ### Phase 2 — Live data completion
 
