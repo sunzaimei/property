@@ -4,7 +4,7 @@
 
 | Service | Platform | URL after deploy |
 |---------|----------|-----------------|
-| Frontend (Next.js) | Vercel | `https://landediq.vercel.app` |
+| Frontend (Next.js) | Vercel | `https://property-livid-one.vercel.app` |
 | Backend (FastAPI) | Render | `https://landediq-api.onrender.com` |
 
 Cost: **Free** to start. Render free tier spins down after 15 min inactivity (first request takes ~30s to wake). Upgrade to $7/month for always-on.

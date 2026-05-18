@@ -559,8 +559,8 @@ The integration stubs in `backend/app/integrations/` document the exact endpoint
 See **[DEPLOY.md](./DEPLOY.md)** for the full step-by-step guide.
 
 **Summary:**
-- **Frontend** → Vercel (free): connect GitHub repo, set root dir to `frontend`, add `NEXT_PUBLIC_API_URL`
-- **Backend** → Render (free tier / $7/month): connect GitHub repo, `render.yaml` is auto-detected
+- **Frontend** → Vercel: `https://property-livid-one.vercel.app`
+- **Backend** → Render: `https://landediq-api.onrender.com`
 
 Every `git push` to `main` triggers automatic redeployment on both platforms.
 
