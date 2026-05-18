@@ -34,7 +34,7 @@ export function CardHeader({ property }: { property: Property }) {
       <div className="flex flex-wrap gap-4 mt-4 text-sm text-gray-600">
         <span>
           <span className="font-medium text-gray-800">Land: </span>
-          {formatArea(property.landAreaSqft)}
+          {property.landAreaSqft > 0 ? formatArea(property.landAreaSqft) : <span className="text-gray-400 italic">Unknown</span>}
         </span>
         {property.builtUpSqft && (
           <span>
