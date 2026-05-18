@@ -108,4 +108,6 @@ export interface SearchResult {
   postalCode: string;
   propertyType: PropertyType;
   district: number;
+  lat?: number;
+  lng?: number;
 }

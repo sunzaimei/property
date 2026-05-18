@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { usePropertySearch } from '@/hooks/usePropertySearch';
 import { SearchSuggestions } from './SearchSuggestions';
+import type { SearchResult } from '@/types';
 
 export function SearchBar() {
   const [query, setQuery] = useState('');
@@ -25,10 +26,15 @@ export function SearchBar() {
     return () => document.removeEventListener('mousedown', onClickOutside);
   }, []);
 
-  function handleSelect(id: string) {
+  function handleSelect(id: string, result: SearchResult) {
     setOpen(false);
     setQuery('');
-    router.push(`/property/${id}`);
+    const params = new URLSearchParams();
+    if (result.address) params.set('address', result.address);
+    if (result.lat) params.set('lat', String(result.lat));
+    if (result.lng) params.set('lng', String(result.lng));
+    const qs = params.toString();
+    router.push(`/property/${id}${qs ? `?${qs}` : ''}`);
   }
 
   return (

@@ -5,14 +5,16 @@ import { IntelligenceCard } from '@/components/card/IntelligenceCard';
 
 interface Props {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ address?: string; lat?: string; lng?: string }>;
 }
 
-export default async function PropertyPage({ params }: Props) {
+export default async function PropertyPage({ params, searchParams }: Props) {
   const { id } = await params;
+  const { address, lat, lng } = await searchParams;
 
   let data;
   try {
-    data = await getPropertyCard(id);
+    data = await getPropertyCard(id, { address, lat, lng });
   } catch {
     notFound();
   }

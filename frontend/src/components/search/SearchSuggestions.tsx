@@ -12,7 +12,7 @@ const typeColors: Record<string, string> = {
 
 interface Props {
   results: SearchResult[];
-  onSelect: (id: string) => void;
+  onSelect: (id: string, result: SearchResult) => void;
 }
 
 export function SearchSuggestions({ results, onSelect }: Props) {
@@ -23,7 +23,7 @@ export function SearchSuggestions({ results, onSelect }: Props) {
         <li key={r.id}>
           <button
             className="w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors flex items-center justify-between gap-3"
-            onClick={() => onSelect(r.id)}
+            onClick={() => onSelect(r.id, r)}
           >
             <span className="flex-1 text-sm font-medium text-gray-900 truncate">{r.address}</span>
             <span className={`text-xs font-medium shrink-0 ${typeColors[r.propertyType] ?? 'text-gray-500'}`}>

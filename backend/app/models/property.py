@@ -35,3 +35,5 @@ class SearchResult(CamelModel):
     postal_code: str
     property_type: str
     district: int
+    lat: Optional[float] = None
+    lng: Optional[float] = None
