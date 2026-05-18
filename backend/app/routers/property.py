@@ -82,74 +82,88 @@ async def get_transactions(property_id: str):
 
 
 def _postal_to_district(postal_code: str) -> int:
-    """Derive Singapore district from first 2 digits of postal code."""
+    """Derive Singapore district from first 2 digits of postal code.
+    Source: URA List of Postal Districts (SingPost)
+    https://www.ura.gov.sg/Corporate/-/media/Corporate/Property/PMI-Online/List_Of_Postal_Districts.pdf
+    """
     if len(postal_code) < 2:
         return 0
     prefix = int(postal_code[:2])
-    # Singapore postal district mapping
-    if prefix in range(1, 9):    return 1
-    if prefix in range(9, 11):   return 2
-    if prefix in range(11, 13):  return 3
-    if prefix in range(13, 15):  return 4
-    if prefix in range(15, 17):  return 5
-    if prefix in range(17, 18):  return 6
-    if prefix in range(18, 20):  return 7
-    if prefix in range(20, 22):  return 8
-    if prefix in range(22, 24):  return 9
-    if prefix in range(24, 28):  return 10
-    if prefix in range(28, 30):  return 11
-    if prefix in range(30, 32):  return 12
-    if prefix in range(32, 34):  return 13
-    if prefix in range(34, 36):  return 14
-    if prefix in range(36, 38):  return 15
-    if prefix in range(38, 40):  return 16
-    if prefix in range(40, 42):  return 17
-    if prefix in range(42, 45):  return 18
-    if prefix in range(45, 47):  return 19
-    if prefix in range(47, 50):  return 20
-    if prefix in range(50, 52):  return 21
-    if prefix in range(52, 54):  return 22
-    if prefix in range(54, 56):  return 23
-    if prefix in range(56, 58):  return 24
-    if prefix in range(58, 60):  return 25
-    if prefix in range(60, 65):  return 26
-    if prefix in range(65, 68):  return 27
-    if prefix in range(68, 72):  return 28
+    _MAP = {
+        1:  [1, 2, 3, 4, 5, 6],
+        2:  [7, 8],
+        3:  [14, 15, 16],
+        4:  [9, 10],
+        5:  [11, 12, 13],
+        6:  [17],
+        7:  [18, 19],
+        8:  [20, 21],
+        9:  [22, 23],
+        10: [24, 25, 26, 27],
+        11: [28, 29, 30],
+        12: [31, 32, 33],
+        13: [34, 35, 36, 37],
+        14: [38, 39, 40, 41],
+        15: [42, 43, 44, 45],
+        16: [46, 47, 48],
+        17: [49, 50, 81],
+        18: [51, 52],
+        19: [53, 54, 55, 82],
+        20: [56, 57],
+        21: [58, 59],
+        22: [60, 61, 62, 63, 64],
+        23: [65, 66, 67, 68],
+        24: [69, 70, 71],
+        25: [72, 73],
+        26: [77, 78],
+        27: [75, 76],
+        28: [79, 80],
+    }
+    for district, sectors in _MAP.items():
+        if prefix in sectors:
+            return district
     return 0
 
 
 def _postal_to_district(postal_code: str) -> int:
-    """Derive Singapore district from first 2 digits of postal code."""
+    """Derive Singapore district from first 2 digits of postal code.
+    Source: URA List of Postal Districts (SingPost)
+    https://www.ura.gov.sg/Corporate/-/media/Corporate/Property/PMI-Online/List_Of_Postal_Districts.pdf
+    """
     if len(postal_code) < 2:
         return 0
     prefix = int(postal_code[:2])
-    # Singapore postal district mapping
-    if prefix in range(1, 9):    return 1
-    if prefix in range(9, 11):   return 2
-    if prefix in range(11, 13):  return 3
-    if prefix in range(13, 15):  return 4
-    if prefix in range(15, 17):  return 5
-    if prefix in range(17, 18):  return 6
-    if prefix in range(18, 20):  return 7
-    if prefix in range(20, 22):  return 8
-    if prefix in range(22, 24):  return 9
-    if prefix in range(24, 28):  return 10
-    if prefix in range(28, 30):  return 11
-    if prefix in range(30, 32):  return 12
-    if prefix in range(32, 34):  return 13
-    if prefix in range(34, 36):  return 14
-    if prefix in range(36, 38):  return 15
-    if prefix in range(38, 40):  return 16
-    if prefix in range(40, 42):  return 17
-    if prefix in range(42, 45):  return 18
-    if prefix in range(45, 47):  return 19
-    if prefix in range(47, 50):  return 20
-    if prefix in range(50, 52):  return 21
-    if prefix in range(52, 54):  return 22
-    if prefix in range(54, 56):  return 23
-    if prefix in range(56, 58):  return 24
-    if prefix in range(58, 60):  return 25
-    if prefix in range(60, 65):  return 26
-    if prefix in range(65, 68):  return 27
-    if prefix in range(68, 72):  return 28
+    _MAP = {
+        1:  [1, 2, 3, 4, 5, 6],
+        2:  [7, 8],
+        3:  [14, 15, 16],
+        4:  [9, 10],
+        5:  [11, 12, 13],
+        6:  [17],
+        7:  [18, 19],
+        8:  [20, 21],
+        9:  [22, 23],
+        10: [24, 25, 26, 27],
+        11: [28, 29, 30],
+        12: [31, 32, 33],
+        13: [34, 35, 36, 37],
+        14: [38, 39, 40, 41],
+        15: [42, 43, 44, 45],
+        16: [46, 47, 48],
+        17: [49, 50, 81],
+        18: [51, 52],
+        19: [53, 54, 55, 82],
+        20: [56, 57],
+        21: [58, 59],
+        22: [60, 61, 62, 63, 64],
+        23: [65, 66, 67, 68],
+        24: [69, 70, 71],
+        25: [72, 73],
+        26: [77, 78],
+        27: [75, 76],
+        28: [79, 80],
+    }
+    for district, sectors in _MAP.items():
+        if prefix in sectors:
+            return district
     return 0
